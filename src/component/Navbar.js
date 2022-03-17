@@ -17,6 +17,9 @@ export default function Navbar() {
                 <li className="nav-item">
                     <Link className="nav-link" tabIndex={-1} to="/about">About</Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" tabIndex={-1} to="/scan">Scan Barcode</Link>
+                </li>
             </ul>
         </div>
         </nav>

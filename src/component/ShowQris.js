@@ -3,7 +3,6 @@ import axios from "axios";
 import bgQris from '../assets/image/bg-01.jpg';
 import { useLocation, Link } from 'react-router-dom';
 import QRCode from "qrcode.react";
-import Swal from "sweetalert2";
 
 export default function ShowQris()
 {
@@ -22,8 +21,6 @@ export default function ShowQris()
          });
     }, []);
 
-    
-
     return (<>
     <div className="container">
         <div className="row justify-content-center mt-2" >
@@ -39,7 +36,7 @@ export default function ShowQris()
                                   <>
                                     <QRCode value={data.data} size={230} />
                                     <table className="table table-light table-striped mt-3">
-
+ 
                                     <tbody>
                                         <tr>
                                             <td>ID Billing </td>
